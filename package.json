@@ -1,0 +1,28 @@
+{
+  "name": "@auroratide/text-filter",
+  "version": "0.0.1",
+  "description": "TODO",
+  "keywords": [
+    "TODO"
+  ],
+  "type": "module",
+  "main": "lib/text-filter.js",
+  "module": "lib/text-filter.js",
+  "scripts": {
+    "start": "wds --node-resolve -p 3000 --watch",
+    "test": "wtr --node-resolve ./**/*.spec.js",
+    "prepublishOnly": "npm run test",
+    "gh": "gh-pages -d ."
+  },
+  "author": {
+    "name": "Timothy Foster",
+    "url": "https://auroratide.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@open-wc/testing": "^3.1.2",
+    "@web/dev-server": "^0.1.30",
+    "@web/test-runner": "^0.13.27",
+    "gh-pages": "^3.2.3"
+  }
+}
