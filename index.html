@@ -14,8 +14,10 @@
             <h1>&lt;text-filter&gt; Demo</h1>
             <section id="main-demo" class="demo">
                 <figure>
-                    <label for="text-filter-input">Filter</label>
-                    <input is="text-filter" for="list" id="text-filter-input" type="text" />
+                    <div class="filter-container">
+                        <label for="text-filter-input">Filter</label>
+                        <input is="text-filter" for="list" id="text-filter-input" type="text" placeholder="Example: bas" />
+                    </div>
                     <ul id="list">
                         <li>Baseball</li>
                         <li>Basketball</li>
@@ -25,7 +27,16 @@
                         <li>Volleyball</li>
                     </ul>
                 </figure>
-                <pre><code><mark><strong>&lt;text-filter>&lt;/text-filter></strong></mark></code></pre>
+                <pre><code><mark>&lt;label for="text-filter-input"></mark>Filter<mark>&lt;/label></mark>
+<mark>&lt;input <strong>is="text-filter" for="list"</strong> id="text-filter-input" type="text" /></mark>
+<mark>&lt;ul <strong>id="list"</strong>></mark>
+    <mark>&lt;li></mark>Baseball<mark>&lt;/li></mark>
+    <mark>&lt;li></mark>Basketball<mark>&lt;/li></mark>
+    <mark>&lt;li></mark>Bowling Ball<mark>&lt;/li></mark>
+    <mark>&lt;li></mark>Football<mark>&lt;/li></mark>
+    <mark>&lt;li></mark>Tennis Ball<mark>&lt;/li></mark>
+    <mark>&lt;li></mark>Volleyball<mark>&lt;/li></mark>
+<mark>&lt;/ul></mark></code></pre>
             </section>
         </main>
         <footer>

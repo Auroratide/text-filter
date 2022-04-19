@@ -3,6 +3,7 @@
 
     --color-bg: hsl(0, 0%, 93%);
     --color-fg: hsl(0, 0%, 100%);
+    --color-neutral: hsl(0, 0%, 87%);
     --color-primary: 211, 69%, 57%;
     --color-success: hsl(102, 56%, 32%);
 
@@ -79,7 +80,7 @@ figure p {
     text-align: center;
 }
 
-figure p:last-child {
+figure *:last-child {
     margin-bottom: 0;
 }
 
@@ -111,18 +112,16 @@ code mark strong {
     color:hsl(23, 95%, 52%);
 }
 
-.switch-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+input {
+    font-size: 1em;
+    border-radius: 0.125em;
+    background-color: var(--color-bg);
+    border: 0.0625em solid var(--color-neutral);
 }
 
-label {
-    padding-right: 0.25em;
-}
-
-label::after {
-    content: ': ';
+input:focus {
+    border-color: hsl(var(--color-primary));
+    background-color: var(--color-fg);
 }
 
 .demo {
@@ -134,26 +133,10 @@ label::after {
     font-weight: bold;
 }
 
-.styleish {
-    font-family: var(--font-styleish);
+.filter-container {
+    margin-bottom: 0.5em;
 }
 
-.fancy {
-    height: 1.125em;
-}
-
-.fancy::part(track) {
-    padding: 0.125em;
-    border-radius: 1em;
-    background-color: hsl(0, 0%, 67%);
-}
-
-.fancy::part(slider) {
-    border-radius: 1em;
-    background-color: hsl(0, 0%, 100%);
-    box-shadow: 0.0625em 0.0625em 0.125em hsla(0, 0%, 0%, 0.25);
-}
-
-.fancy[checked]::part(track) {
-    background-color: hsl(var(--color-primary));
+.demo ul {
+    min-height: 7.5em;
 }
