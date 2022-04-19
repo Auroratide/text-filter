@@ -1,6 +1,6 @@
 {
   "name": "@auroratide/text-filter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Decorate an input field to automatically filter a list",
   "keywords": [
     "input",
